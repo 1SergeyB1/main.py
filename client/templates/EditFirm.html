@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Редактировать фирму</title>
+{% endblock %}
+
+{% block body %}
+<h1>Редактировать фирму</h1>
+<form method="post">
+    <input type="text" name="name" id="name" value="{{data.name}}"><br>
+    <button type="submit">Редактировать</button>
+</form>
+{% endblock %}
+
+
+
+
+

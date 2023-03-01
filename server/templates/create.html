@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Добавить пользователя</title>
+{% endblock %}
+
+{% block body %}
+<h1>Добавление пользователя</h1>
+<form method="post">
+    <input type="text" name="nickname" id="nickname" placeholder="Введите ник-нейм"><br>
+    <input type="text" name="email" id="email" placeholder="Введите email"><br>
+    <input type="password" name="password" id="password" placeholder="Введите пароль"><br>
+    <button type="submit">Добавить пользователя</button>
+</form>
+{% endblock %}

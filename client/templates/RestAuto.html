@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Таблица автомобилей</title>
+{% endblock %}
+
+{% block body %}
+<h1>Таблица автомобилей</h1><br>
+<form method="post">
+<table border="1">
+<tr><th>id пользователя авто</th><th>Номер авто</th> <!--ряд с ячейками заголовков-->
+    <tr><td>{{ item }}</td>
+    <td><select name="id" id="id" size="1">
+    {% for i in data %}
+    <option value="{{i.id}}">{{i.number}}</option>
+    {%endfor%}
+    </select><br></td></tr> <!--ряд с ячейками тела таблицы-->
+</table>
+<button type="submit">Отправить</button>
+</form>
+{% endblock %}

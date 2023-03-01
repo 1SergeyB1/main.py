@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Таблица автосалонов</title>
+{% endblock %}
+
+{% block body %}
+<h1>Таблица автосалонов</h1><br>
+<table border="1">
+<tr><th>id</th><th>название автосалона</th><th>id фирмы владельца</th><th>Удаление</th><th>Изменение</th> <!--ряд с ячейками заголовков-->
+    {% for i in data %}
+    <tr><td>{{ i.id }}</td><td>{{ i.name }}</td><td>{{ i.firma_id }}</td>
+    <td><form method="post"><input type="submit" name="delete" id="delete" value="{{ i.id }}"></form></td>
+    <td><a href = "/EditAutoSalon/{{ i.id }}"><button>Изменить</button></a></td>
+</tr> <!--ряд с ячейками тела таблицы-->
+    {%endfor%}
+</table>
+{% endblock %}

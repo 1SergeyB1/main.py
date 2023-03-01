@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Добавить автосалон</title>
+{% endblock %}
+
+{% block body %}
+<h1>Добавление автосалон</h1>
+<form method="post">
+    <input type="text" name="name" id="name" placeholder="Введите название автосалона"><br>
+    <select name="firma_id" id="firma_id" size="1">
+    {% for i in data %}
+    <option value="{{i.id}}">{{i.name}}</option>
+    {%endfor%}
+    </select><br>
+    <button type="submit">Добавить автосалон</button>
+</form>
+{% endblock %}

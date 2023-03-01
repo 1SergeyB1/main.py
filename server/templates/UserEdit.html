@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Faggot Snowbol</title>
+{% endblock %}
+
+{% block body %}
+<h1>Редактировать пользователя</h1>
+<form method="post">
+    <input disabled='disabled' type="text" name="id" id="id" value="{{data.id}}"><br>
+    <input type="text" name="nickname" id="nickname" value="{{data.nickname}}"><br>
+    <input type="text" name="email" id="email" value="{{data.email}}"><br>
+    <input type="password" name="password" id="password" value="{{data.password}}"><br>
+    <button type="submit">Добавить пользователя</button>
+</form>
+{% endblock %}
+
+

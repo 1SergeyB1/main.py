@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}{% endblock %}
+</head>
+<body>
+    <ul>
+    <li><a href="/">Таблица пользователей</a></li>
+    <li><a href="/auto">таблица авто</a></li>
+    <li><a href="/create">Добавить пользователя</a></li>
+    </ul>
+    {% block body %}{% endblock %}
+</body>
+</html>

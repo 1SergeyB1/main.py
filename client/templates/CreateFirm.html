@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Добавить пользователя</title>
+{% endblock %}
+
+{% block body %}
+<h1>Добавление пользователя</h1>
+<form method="post">
+    <input type="text" name="name" id="name" placeholder="Введите название фирмы"><br>
+    <button type="submit">Добавить фирму</button>
+</form>
+{% endblock %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}{% endblock %}
+</head>
+<body>
+    <ul>
+    <li><a href="/">Таблица фирм</a></li>
+    <li><a href="/AutoSalon">Таблица автосалонов</a></li>
+    <li><a href="/Auto">Таблица авто</a></li>
+    <li><a href="/CreateFirm">Добавить фирму</a></li>
+    <li><a href="/CreateAutoSalon">Добавить автосалон</a></li>
+    <li><a href="/CreateAuto">Добавить авто</a></li>
+    </ul>
+    {% block body %}{% endblock %}
+</body>
+</html>
